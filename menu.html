@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>background.com</title>
+<link rel="icon" href="erick.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#background">Background</a>
+  <a href="#personal statement">Personal Statement</a>
+  <a href="#profile">Profile</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div id="main">
+  <!--<h2>Sidenav Push Example</h2>
+  <p>Click on the element below to open the side navigation menu, and push this content to the right.</p> -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Engineer Erick Ngua</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+ 
+<h2 id="backgound">Background</h2>
+<p>Here is the backgournd.</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="Screenshot 2024-11-10 080739.png" style="width:100%">
+  <div class="text">Hello!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="bak.jpg" style="width:100%; height: 400px; background-color: grey; border: 2px solid black;">
+  <div class="text">Here is the background</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="back.jpg" style="width:100%">
+  <div class="text">Here it is now, Wait! Don't scroll: See now!... wow! great</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="kb.jpeg" style="width:100%">
+    <div class="text">See!</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<p>Growing up in a multigenerational household, I've had the rare privilege of experiencing
+     diverse perspectives on life from my grandparents, parents, and siblings. My grandparents,
+     who emigrated from Kilifi, taught me the importance of staying true to our cultural heritage
+      and maintaining strong connections with family. Daily rituals like preparing and enjoying 
+      traditional milikenda's meals, participating in Lunar New Year celebrations, and listening to 
+      stories about my grandparents' journey to the Machakos helped me appreciate the strength
+       and resilience of my ancestors.</p>
+
+   <p> However, this cultural pride was not always something I cherished. As a child, I was bullied for
+     my Banh Khot and Banh Mi lunches, and I'd often ask my parents to pack more generic-looking
+      sandwiches to avoid feeling like an outsider at school. It wasn't until my grandmother shared
+      
+      her own story of assimilation and how she strived to maintain her cultural identity in a new
+       country that I realized the value of embracing my heritage. Inspired by her courage, I decided
+        to educate my peers about mijikenda traditions and founded a cultural exchange club at school.
+         Together, we explored our heritages, organizing potlucks, cultural presentations, and language 
+         exchange sessions.</p>
+    
+    <p> Through this experience, I've learned that embracing who I am and the unique background I come
+     from has made me a stronger person. My personal background has taught me to be open to learning
+      about other cultures, which I look forward to bringing to my future college community.</p>
+
+
+<h1 id="personal statement">Personal Statement</h1>
+<p>I have always had an interest in the way things work, and since I was young, science has beenone 
+  of my favourite subjects. My interest in sciences, particularly physics, has developedthroughout 
+  my time at school, and I enjoy the challenge of using scientific and mathematicalideas when 
+  solving everyday problems. Last year I took part in the Engineering EducationScheme, working 
+  alongside three other students, with the local water company, to work on aproject involving the 
+  removal of sludge from a drinking water clarification tank. </p>
+  <p>This helped meto develop time 
+  management, problem-solving and teamwork skills, as we encountered severalproblems along the way
+   (mostly involving the sludge), as well as having to cope with each other for long hours in order
+    to meet deadlines. I found this both challenging and rewarding, andachieved a Gold Crest Award 
+    as well as being able to take part in the regional final of the YoungEngineers for Britain 
+    competition. The scheme gave me a useful insight into the types of problems that engineers have 
+    to solve, and convinced me that engineering is the career path Iwant to follow. I aim to secure
+     sponsorship for my course with a local company, as this willprovide me with experience of 
+     industrial work during the holidays, as well as helping mefinancially through my time at 
+     university.I believe that good links between engineers and businesses are essential for an 
+     efficient andprofitable future for British industry.</p>
+     <p> Studying Economics to AS-level, along with
+      sciences andmaths, has helped me to understand some of the scientific principles behind 
+      production andmanagement techniques. Physics has taught me about how things behave, and how 
+      theseproperties can be used in solving both practical and theoretical situations. Studying 
+      biology hashelped me to appreciate the role that engineers can play in helping to balance 
+      industry andnatural environment. My favourite part of the course is the environment module, 
+      as I enjoylearning about how different species can adapt to their surroundings. Mathematics
+       gives me theopportunity to apply familiar concepts to unfamiliar situations, and I enjoy the
+        challenge of solving mathematical problems. I also find further maths enjoyable, as I find 
+        it more challengingthan my normal maths lessons.</p>
+        <p> Alongside my school work, I have been 
+        studying an Open University science short course
+entitled “Food and Health: A Chemical Story”. I enjoy working on the course, as it helps to
+broaden my scientific reading, and covers interesting topics in more depth than my schoolstudies. 
+It also helps me with my independent study and time management skills. I am due tocomplete the
+ course at the end of October.I like to be involved in other aspects of school life, for example 
+ I took part in the junior mock trialcompetition lower down the school. Last year I was assistant
+  house captain, helping toencourage younger members of my house in competitions. I helped backstage
+   in the sixth form
+show, which I intend to do again this year. I am a year eight “buddy”, which involves helping an
+able younger student with extra schoolwork. </p>
+<p>I take drama lessons out of school, and recentlypassed
+ Guildhall Grade 6 solo acting with honours. I have been involved in five musicals since
+starting at this school, and am currently rehearsing for my first principal role in the 
+schools’ production of “Les Miserables”. I have also taken part in several pro
+ductions with local youththeatre and amateur dramatics societies, ranging from William Shakespeare 
+to Willy Russell. Iplay the violin in the school orchestra, and enjoy singing in the school choir. 
+I also take part inmusic activities outside of school, and am involved in groups such as Burton 
+Sinfonia andStaffordshire Youth Choir. Although at the moment I intend to complete a degree in 
+manufacturing engineering, I do notfeel that I am in the best position to make any final decisions 
+about my career yet, and havechosen courses with the first year (and in some cases the second year)
+ common to degree programmes in many disciplines of engineering. My experiences of engineering so far havebeen both 
+  challenging and rewarding, and I hope that my future career will be too.</p>
+
+<div class="profile" id="profile">
+   <h2>Personal profile</h2>
+   <h1>Erick Ngua</h1>
+   <h3>Engineer Erick</h3>
+   <p>Machakos University</p>
+   <p class="p">Tel:0708069994</p>
+   <p class="p">Email:<a href="mailto:erickchugu@gmail.com">erickchugu@gmail.com</a></p>
+   <p>I am a hardworking and ambitious individual with a great passion for the electrical ana electronics industry. 
+   I am currently in my second year of studying Bs in Electrical and electronics Engineering at
+   Machakos University. I have excellent communication skills, enabling me to effectively communicate 
+   with a wide range of people. I am seeing a part-time position in the industry in which I can put
+   into practice my knowledge and experience, ultimately benefiting the operations of the 
+   organisation that I work for.</p>
+
+
+</div>
+<div id="contact">
+<h2>Contact Section</h2>
+<p>Contact me by entering your details in this section</p>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="Screenshot_8-11-2024_212932_.jpeg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="erickchugu@gmail.com" method="get">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="kenya">Kenya</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
